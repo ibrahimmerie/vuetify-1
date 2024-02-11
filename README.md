@@ -1,1 +1,2 @@
-# studentathlete
+# vuetify
+My project template with vuetify

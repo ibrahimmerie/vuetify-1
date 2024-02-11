@@ -2,6 +2,7 @@
   <VApp>
     <VAppBar prominent shrink-on-scroll>
       <VToolbarTitle>Vuetify Co</VToolbarTitle>
+      <VSpacer></VSpacer>
       <template #append>
         <VBtn
           style="margin-right: 15px"
@@ -81,7 +82,6 @@ const toggleTheme = () => {
   padding: 12px;
   height: 45px;
   border-radius: 5px;
-  /* border: 1px solid gray; */
 }
 
 .nav-link:hover {

@@ -26,6 +26,23 @@ const router = createRouter({
 })
 
 router.beforeEach(async (to, from, next) => {
+  const redirectPath = to.query.path
+
+  if (redirectPath === 'home') {
+    console.log('redirected to:  ' + redirectPath)
+    return next({ name: 'home' })
+  }
+
+  if (redirectPath === 'discover') {
+    console.log('redirected to:  ' + redirectPath)
+    return next({ name: 'discover' })
+  }
+
+  if (redirectPath === 'settings') {
+    console.log('redirected to:  ' + redirectPath)
+    return next({ name: 'settings' })
+  }
+
   return next()
 })
 
